@@ -1,6 +1,6 @@
 <launch>
     <let name="urdf_path"
-            value="$(find-pkg-share robo1_description)/urdf/modified_test1.urdf" />
+            value="$(find-pkg-share robo1_description)/urdf/full.urdf.xacro" />
 
     <let name="rviz_config_path"
             value="$(find-pkg-share robo1_description)/rviz/urdf_config_final.rviz" />
