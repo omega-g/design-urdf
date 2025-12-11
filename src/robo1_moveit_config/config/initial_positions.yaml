@@ -1,0 +1,11 @@
+# Default initial positions for test_1's ros2_control fake system
+
+initial_positions:
+  Fastened_5_1: 0
+  Revolute_1: 0
+  Revolute_2: 0
+  Revolute_3: 0
+  Revolute_3_1: 0
+  Revolute_5: 0
+  Revolute_5_1: 0
+  Revolute_7: 0

@@ -7,7 +7,7 @@
     <visual name="base_v2_v1_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/base_v2_v1_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/base_v2_v1_1.stl"/>
       </geometry>
       <material name="base_v2_v1_1-material">
         <color rgba="1 0.5 0 1"/>
@@ -16,7 +16,7 @@
     <collision name="base_v2_v1_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/base_v2_v1_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/base_v2_v1_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -31,7 +31,7 @@
     <visual name="motors_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/motors_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find robo1_description)/meshes/motors_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="motors_1-material">
         <color rgba="0 0 1 1"/>
@@ -40,7 +40,7 @@
     <collision name="motors_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/motors_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file://$(find robo1_description)/meshes/motors_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <inertial>
@@ -56,7 +56,7 @@
     <visual name="LewanSoul_LX-16A_4_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_4.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_4.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_4-material">
         <color rgba="0 0 0 1"/>
@@ -65,7 +65,7 @@
     <collision name="LewanSoul_LX-16A_4_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_4.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_4.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -78,7 +78,7 @@
     <visual name="LewanSoul_LX-16A_5_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_5.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_5.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_5-material">
         <color rgba="1 0 1 1"/>
@@ -87,7 +87,7 @@
     <collision name="LewanSoul_LX-16A_5_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_5.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_5.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -100,7 +100,7 @@
     <visual name="flankL_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/flankL_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/flankL_1.stl"/>
       </geometry>
       <material name="flankL_1-material">
         <color rgba="1 0.5 0 1"/>
@@ -109,7 +109,7 @@
     <collision name="flankL_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/flankL_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/flankL_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -122,7 +122,7 @@
     <visual name="flankR_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/flankR_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/flankR_1.stl"/>
       </geometry>
       <material name="flankR_1-material">
         <color rgba="1 1 1 1"/>
@@ -131,7 +131,7 @@
     <collision name="flankR_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/flankR_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/flankR_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -144,7 +144,7 @@
     <visual name="batteryHolder_v2_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/batteryHolder_v2_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/batteryHolder_v2_1.stl"/>
       </geometry>
       <material name="batteryHolder_v2_1-material">
         <color rgba="1 0 0.5 1"/>
@@ -153,7 +153,7 @@
     <collision name="batteryHolder_v2_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/batteryHolder_v2_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/batteryHolder_v2_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -166,7 +166,7 @@
     <visual name="hip_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/hip_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/hip_1.stl"/>
       </geometry>
       <material name="hip_1-material">
         <color rgba="0 1 1 1"/>
@@ -175,7 +175,7 @@
     <collision name="hip_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/hip_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/hip_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -188,7 +188,7 @@
     <visual name="hip_2_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/hip_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/hip_2.stl"/>
       </geometry>
       <material name="hip_2-material">
         <color rgba="0 1 0 1"/>
@@ -197,7 +197,7 @@
     <collision name="hip_2_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/hip_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/hip_2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -210,7 +210,7 @@
     <visual name="LewanSoul_LX-16A_3_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_3.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_3.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_3-material">
         <color rgba="0 1 1 1"/>
@@ -219,7 +219,7 @@
     <collision name="LewanSoul_LX-16A_3_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_3.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_3.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -232,7 +232,7 @@
     <visual name="LewanSoul_LX-16A_6_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_6.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_6.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_6-material">
         <color rgba="1 0 0 1"/>
@@ -241,7 +241,7 @@
     <collision name="LewanSoul_LX-16A_6_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_6.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_6.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -254,7 +254,7 @@
     <visual name="leg_segment_2_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_2.stl"/>
       </geometry>
       <material name="leg_segment_2-material">
         <color rgba="1 0 0 1"/>
@@ -263,7 +263,7 @@
     <collision name="leg_segment_2_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -276,7 +276,7 @@
     <visual name="leg_segment_3_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_3.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_3.stl"/>
       </geometry>
       <material name="leg_segment_3-material">
         <color rgba="1 1 1 1"/>
@@ -285,7 +285,7 @@
     <collision name="leg_segment_3_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_3.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_3.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -298,7 +298,7 @@
     <visual name="LewanSoul_LX-16A_2_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_2.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_2-material">
         <color rgba="1 0 0.5 1"/>
@@ -307,7 +307,7 @@
     <collision name="LewanSoul_LX-16A_2_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -320,7 +320,7 @@
     <visual name="LewanSoul_LX-16A_7_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_7.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_7.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_7-material">
         <color rgba="0 0 1 1"/>
@@ -329,7 +329,7 @@
     <collision name="LewanSoul_LX-16A_7_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_7.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_7.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -342,7 +342,7 @@
     <visual name="leg_segment_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_1.stl"/>
       </geometry>
       <material name="leg_segment_1-material">
         <color rgba="1 0 0.5 1"/>
@@ -351,7 +351,7 @@
     <collision name="leg_segment_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -364,7 +364,7 @@
     <visual name="leg_segment_4_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_4.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_4.stl"/>
       </geometry>
       <material name="leg_segment_4-material">
         <color rgba="1 0.5 0 1"/>
@@ -373,7 +373,7 @@
     <collision name="leg_segment_4_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/leg_segment_4.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/leg_segment_4.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -386,7 +386,7 @@
     <visual name="LewanSoul_LX-16A_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_1.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_1-material">
         <color rgba="1 0 0.5 1"/>
@@ -395,7 +395,7 @@
     <collision name="LewanSoul_LX-16A_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -408,7 +408,7 @@
     <visual name="LewanSoul_LX-16A_8_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_8.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_8.stl"/>
       </geometry>
       <material name="LewanSoul_LX-16A_8-material">
         <color rgba="0 0 1 1"/>
@@ -417,7 +417,7 @@
     <collision name="LewanSoul_LX-16A_8_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_8.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/LewanSoul_LX-16A_8.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -430,7 +430,7 @@
     <visual name="ankleL_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/ankleL_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/ankleL_1.stl"/>
       </geometry>
       <material name="ankleL_1-material">
         <color rgba="1 0 0.5 1"/>
@@ -439,7 +439,7 @@
     <collision name="ankleL_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/ankleL_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/ankleL_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -452,7 +452,7 @@
     <visual name="ankleL_2_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/ankleL_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/ankleL_2.stl"/>
       </geometry>
       <material name="ankleL_2-material">
         <color rgba="1 0 0.5 1"/>
@@ -461,7 +461,7 @@
     <collision name="ankleL_2_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/ankleL_2.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/ankleL_2.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -474,7 +474,7 @@
     <visual name="footL_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/footL_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/footL_1.stl"/>
       </geometry>
       <material name="footL_1-material">
         <color rgba="1 1 0 1"/>
@@ -483,7 +483,7 @@
     <collision name="footL_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/footL_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/footL_1.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -496,7 +496,7 @@
     <visual name="footR_1_visual">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/footR_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/footR_1.stl"/>
       </geometry>
       <material name="footR_1-material">
         <color rgba="1 1 1 1"/>
@@ -505,7 +505,7 @@
     <collision name="footR_1_collision">
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://robo1_description/meshes/footR_1.stl"/>
+        <mesh filename="file://$(find robo1_description)/meshes/footR_1.stl"/>
       </geometry>
     </collision>
     <inertial>

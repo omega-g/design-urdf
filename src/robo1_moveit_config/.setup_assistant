@@ -1,0 +1,23 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: robo1_description
+    relative_path: urdf/moveit_urdf.urdf
+  srdf:
+    relative_path: config/test_1.srdf
+  package_settings:
+    author_name: ahmed
+    author_email: ahmed@ahmed.com
+    generated_timestamp: 1765308016
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position

@@ -1,0 +1,678 @@
+<?xml version="1.0" ?>
+<robot name="test_1">
+
+  <link name="world_link"/>
+
+  <link name="base_link">
+    <visual name="base_v2_v1_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/base_v2_v1_1.stl"/>
+      </geometry>
+      <material name="base_v2_v1_1-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="base_v2_v1_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/base_v2_v1_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.11679735"/>
+      <inertia ixx="6.8519709e-05" iyy="0.00013766938" izz="0.00020550098" ixy="1.2341219e-06" ixz="-1.3306104e-11" iyz="-1.4089961e-11"/>
+      <origin xyz="0.00070233947 0.024174695 0.0029999976" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+
+  <link name="motors_1">
+    <visual name="motors_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/motors_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="motors_1-material">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="motors_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/motors_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.048823099"/>
+      <inertia ixx="2.3198055e-05" iyy="1.2417377e-05" izz="1.9325234e-05" ixy="-5.6234682e-07" ixz="4.3725248e-07" iyz="4.6894448e-06"/>
+      <origin xyz="0.062790204 -0.079263271 -0.22857508" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+
+  
+  <link name="LewanSoul_LX-16A_4">
+    <visual name="LewanSoul_LX-16A_4_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_4.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_4-material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_4_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_4.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="1.4491951e-10" ixz="-5.0256521e-13" iyz="-3.8867277e-07"/>
+      <origin xyz="-0.01050014 0.016968516 -0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_5">
+    <visual name="LewanSoul_LX-16A_5_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_5.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_5-material">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_5_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_5.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="1.4491951e-10" ixz="-5.0256521e-13" iyz="-3.8867277e-07"/>
+      <origin xyz="0.01049986 0.016968516 -0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="flankL_1">
+    <visual name="flankL_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/flankL_1.stl"/>
+      </geometry>
+      <material name="flankL_1-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="flankL_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/flankL_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.040916531"/>
+      <inertia ixx="2.163188e-05" iyy="6.8019186e-06" izz="2.2297702e-05" ixy="-5.2459172e-07" ixz="5.9460615e-07" iyz="-4.2299613e-07"/>
+      <origin xyz="0.0025499628 0.030815436 -0.033323148" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="flankR_1">
+    <visual name="flankR_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/flankR_1.stl"/>
+      </geometry>
+      <material name="flankR_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="flankR_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/flankR_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.02258963"/>
+      <inertia ixx="1.8673381e-05" iyy="8.5542641e-06" izz="1.0185141e-05" ixy="1.7544307e-12" ixz="-2.6977329e-08" iyz="-1.0692614e-10"/>
+      <origin xyz="-0.0019492386 -0.012000458 -0.02636132" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="batteryHolder_v2_1">
+    <visual name="batteryHolder_v2_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/batteryHolder_v2_1.stl"/>
+      </geometry>
+      <material name="batteryHolder_v2_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="batteryHolder_v2_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/batteryHolder_v2_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.08077787"/>
+      <inertia ixx="6.5233669e-05" iyy="8.224513e-05" izz="3.4366883e-05" ixy="4.6430999e-11" ixz="-6.121992e-12" iyz="2.1593992e-06"/>
+      <origin xyz="0.015000033 0.011998613 -0.023242364" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="hip_1">
+    <visual name="hip_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/hip_1.stl"/>
+      </geometry>
+      <material name="hip_1-material">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="hip_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/hip_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.03943546"/>
+      <inertia ixx="1.4607056e-05" iyy="1.2283553e-05" izz="1.1165972e-05" ixy="-1.050652e-07" ixz="1.0252511e-10" iyz="-7.5816238e-11"/>
+      <origin xyz="0.019931771 0.00015863118 -0.01900017" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="hip_2">
+    <visual name="hip_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/hip_2.stl"/>
+      </geometry>
+      <material name="hip_2-material">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="hip_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/hip_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.03943546"/>
+      <inertia ixx="1.4607056e-05" iyy="1.2283553e-05" izz="1.1165972e-05" ixy="-1.050652e-07" ixz="-1.0252511e-10" iyz="7.5816238e-11"/>
+      <origin xyz="-0.019931771 -0.00015863118 -0.01900017" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_3">
+    <visual name="LewanSoul_LX-16A_3_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_3.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_3-material">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_3_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_3.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="-1.4491951e-10" ixz="-5.0256521e-13" iyz="3.8867277e-07"/>
+      <origin xyz="0.01050014 0.016968516 0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_6">
+    <visual name="LewanSoul_LX-16A_6_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_6.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_6-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_6_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_6.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="-1.4491951e-10" ixz="-5.0256521e-13" iyz="3.8867277e-07"/>
+      <origin xyz="0.01050014 0.016968516 0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="leg_segment_2">
+    <visual name="leg_segment_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_2.stl"/>
+      </geometry>
+      <material name="leg_segment_2-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="leg_segment_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.034287197"/>
+      <inertia ixx="1.5672114e-05" iyy="1.2778538e-05" izz="5.8827493e-06" ixy="9.5502308e-11" ixz="-9.1741836e-11" iyz="-1.0714603e-07"/>
+      <origin xyz="-2.0405501e-07 0.019606021 -0.0188177" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="leg_segment_3">
+    <visual name="leg_segment_3_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_3.stl"/>
+      </geometry>
+      <material name="leg_segment_3-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="leg_segment_3_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_3.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.034287197"/>
+      <inertia ixx="1.5672114e-05" iyy="1.2778538e-05" izz="5.8827493e-06" ixy="9.5502308e-11" ixz="-9.1741836e-11" iyz="-1.0714603e-07"/>
+      <origin xyz="-2.0405501e-07 0.019606021 -0.0188177" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_2">
+    <visual name="LewanSoul_LX-16A_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_2.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_2-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="1.4491951e-10" ixz="-5.0256521e-13" iyz="-3.8867277e-07"/>
+      <origin xyz="-0.01050014 0.016968516 -0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_7">
+    <visual name="LewanSoul_LX-16A_7_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_7.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_7-material">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_7_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_7.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="1.4491951e-10" ixz="-5.0256521e-13" iyz="-3.8867277e-07"/>
+      <origin xyz="-0.01050014 0.016968516 -0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="leg_segment_1">
+    <visual name="leg_segment_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_1.stl"/>
+      </geometry>
+      <material name="leg_segment_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="leg_segment_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.034287197"/>
+      <inertia ixx="1.5672114e-05" iyy="1.2778538e-05" izz="5.8827493e-06" ixy="9.5502308e-11" ixz="-9.1741836e-11" iyz="-1.0714603e-07"/>
+      <origin xyz="-2.0405501e-07 0.019606021 -0.0188177" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="leg_segment_4">
+    <visual name="leg_segment_4_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_4.stl"/>
+      </geometry>
+      <material name="leg_segment_4-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="leg_segment_4_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/leg_segment_4.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.034287197"/>
+      <inertia ixx="1.5672114e-05" iyy="1.2778538e-05" izz="5.8827493e-06" ixy="9.5502308e-11" ixz="-9.1741836e-11" iyz="-1.0714603e-07"/>
+      <origin xyz="-2.0405501e-07 0.019606021 -0.0188177" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_1">
+    <visual name="LewanSoul_LX-16A_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_1.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="1.4491951e-10" ixz="-5.0256521e-13" iyz="-3.8867277e-07"/>
+      <origin xyz="-0.01050014 0.016968516 -0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="LewanSoul_LX-16A_8">
+    <visual name="LewanSoul_LX-16A_8_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_8.stl"/>
+      </geometry>
+      <material name="LewanSoul_LX-16A_8-material">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="LewanSoul_LX-16A_8_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/LewanSoul_LX-16A_8.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.10058414"/>
+      <inertia ixx="2.6616007e-05" iyy="1.4611594e-05" izz="2.1757467e-05" ixy="1.4491951e-10" ixz="-5.0256521e-13" iyz="-3.8867277e-07"/>
+      <origin xyz="-0.01050014 0.016968516 -0.015849081" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="ankleL_1">
+    <visual name="ankleL_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/ankleL_1.stl"/>
+      </geometry>
+      <material name="ankleL_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="ankleL_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/ankleL_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.041114823"/>
+      <inertia ixx="1.2862196e-05" iyy="1.0087583e-05" izz="6.5210565e-06" ixy="-7.4799325e-12" ixz="-4.0173435e-11" iyz="4.1231693e-12"/>
+      <origin xyz="-2.9762508e-08 -0.020740566 -0.018999978" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="ankleL_2">
+    <visual name="ankleL_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/ankleL_2.stl"/>
+      </geometry>
+      <material name="ankleL_2-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="ankleL_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/ankleL_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.041114823"/>
+      <inertia ixx="1.2862196e-05" iyy="1.0087583e-05" izz="6.5210565e-06" ixy="-7.4799325e-12" ixz="-4.0173435e-11" iyz="4.1231693e-12"/>
+      <origin xyz="-2.9762508e-08 -0.020740566 -0.018999978" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="footL_1">
+    <visual name="footL_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/footL_1.stl"/>
+      </geometry>
+      <material name="footL_1-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="footL_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/footL_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.077574725"/>
+      <inertia ixx="3.5396869e-05" iyy="5.4589755e-05" izz="2.1913478e-05" ixy="5.1045022e-07" ixz="1.8275585e-06" iyz="5.8749415e-07"/>
+      <origin xyz="0.005459001 -0.010416339 -0.0086100609" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="footR_1">
+    <visual name="footR_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/footR_1.stl"/>
+      </geometry>
+      <material name="footR_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="footR_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://robo1_description/meshes/footR_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.077575551"/>
+      <inertia ixx="3.5397722e-05" iyy="5.4590634e-05" izz="2.1913513e-05" ixy="5.1046542e-07" ixz="1.8275567e-06" iyz="5.87493e-07"/>
+      <origin xyz="-0.0054588413 0.010416318 0.0086100771" rpy="0 0 0"/>
+    </inertial>
+  </link>
+
+  <!-- joints (modified the listed joints to revolute and added axis/limit where appropriate) -->
+
+  <joint name="world_to_base" type="fixed">
+   <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    <parent link="world_link"/>
+    <child link="base_link"/>
+  </joint>
+
+  <joint name="Fastened_1" type="fixed">
+    <origin xyz="0 0.025 -0.007" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="motors_1"/>
+  </joint>
+
+  <joint name="Fastened_9" type="fixed">
+  <origin xyz="0 -0.017 -0.023" rpy="0 1.57 -1.57"/>
+  <parent link="motors_1"/>
+  <child link="LewanSoul_LX-16A_4"/>
+  </joint>
+
+  <joint name="Fastened_6" type="fixed">
+  <origin xyz="0 -0.017 -0.023" rpy="0 -1.57 1.57"/>
+  <parent link="motors_1"/>
+  <child link="LewanSoul_LX-16A_5"/>
+  </joint>
+
+  <joint name="Fastened_2" type="fixed">
+    <origin xyz="0.051 0.0575 0.006" rpy="3.1415927 0 0"/>
+    <parent link="base_link"/>
+    <child link="flankL_1"/>
+  </joint>
+
+  <joint name="Fastened_3" type="fixed">
+    <origin xyz="-0.0557 0.01970341 0.006" rpy="3.1415927 0 0"/>
+    <parent link="base_link"/>
+    <child link="flankR_1"/>
+  </joint>
+
+  <joint name="Fastened_7" type="fixed">
+    <origin xyz="-0.015 0.0585 0.006" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="batteryHolder_v2_1"/>
+  </joint>
+
+  <joint name="Revolute_5" type="revolute">
+    <origin xyz="-0.0105 0.0295 0.0039" rpy="0 0 0.015"/>
+    <parent link="LewanSoul_LX-16A_4"/>
+    <child link="hip_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <joint name="Revolute_5_1" type="revolute">
+    <origin xyz="0.0105 0.0295 0.0039" rpy="0 0 0"/>
+    <parent link="LewanSoul_LX-16A_5"/>
+    <child link="hip_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <joint name="Fastened_5" type="fixed">
+    <origin xyz="0.031 0.0161 -0.0087" rpy="1.5707963 1.5707963 0"/>
+    <parent link="hip_1"/>
+    <child link="LewanSoul_LX-16A_3"/>
+  </joint>
+
+  <!-- changed to revolute (previously declared fixed) -->
+  <joint name="Revolute_4_1" type="fixed">
+    <origin xyz="-0.031 -0.0161 -0.0087" rpy="-1.5707963 1.5707963 0"/>
+    <parent link="hip_2"/>
+    <child link="LewanSoul_LX-16A_6"/>
+  </joint>
+
+  <joint name="Revolute_3" type="revolute">
+    <origin xyz="0.0105 0.0295 -0.0039" rpy="3.1415927 0 3.1415927"/>
+    <parent link="LewanSoul_LX-16A_3"/>
+    <child link="leg_segment_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <joint name="Revolute_3_1" type="revolute">
+    <origin xyz="0.0105 0.0295 -0.0039" rpy="3.1415927 0 3.1415927"/>
+    <parent link="LewanSoul_LX-16A_6"/>
+    <child link="leg_segment_3"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <!-- changed to revolute (previously fixed). added axis and limits to be consistent. -->
+  <joint name="Revolute_2_1" type="fixed">
+    <origin xyz="0.0103 0.031 -0.0029" rpy="0 0 0"/>
+    <parent link="leg_segment_2"/>
+    <child link="LewanSoul_LX-16A_2"/>
+  </joint>
+
+  <!-- changed to revolute (previously fixed). added axis and limits. -->
+  <joint name="Revolute_2_1_1" type="fixed">
+    <origin xyz="0.0103 0.031 -0.0029" rpy="0 0 0"/>
+    <parent link="leg_segment_3"/>
+    <child link="LewanSoul_LX-16A_7"/>
+  </joint>
+
+  <joint name="Revolute_2" type="revolute">
+    <origin xyz="-0.0105 0.0295 0.0039" rpy="0 0 0"/>
+    <parent link="LewanSoul_LX-16A_2"/>
+    <child link="leg_segment_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <joint name="Fastened_5_1" type="revolute">
+    <origin xyz="-0.0105 0.0295 0.0039" rpy="0 0 0"/>
+    <parent link="LewanSoul_LX-16A_7"/>
+    <child link="leg_segment_4"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <joint name="Fastened_8" type="fixed">
+    <origin xyz="0.0103 0.031 -0.0029" rpy="0 0 0"/>
+    <parent link="leg_segment_1"/>
+    <child link="LewanSoul_LX-16A_1"/>
+  </joint>
+
+  <!-- changed to revolute (previously fixed). added axis & limits. -->
+  <joint name="Revolute_2_2" type="fixed">
+    <origin xyz="0.0103 0.031 -0.0029" rpy="0 0 0"/>
+    <parent link="leg_segment_4"/>
+    <child link="LewanSoul_LX-16A_8"/>
+  </joint>
+
+  <joint name="Fastened_4" type="fixed">
+    <origin xyz="-0.0105 0.0295 -0.0342" rpy="3.1415927 0 0"/>
+    <parent link="LewanSoul_LX-16A_1"/>
+    <child link="ankleL_1"/>
+  </joint>
+
+  <!-- changed to revolute (previously fixed Fastened_4_1) and added axis/limit -->
+  <joint name="Fastened_4_1" type="fixed">
+    <origin xyz="-0.0105 0.0295 -0.0342" rpy="3.1415927 0 0"/>
+    <parent link="LewanSoul_LX-16A_8"/>
+    <child link="ankleL_2"/>
+  </joint>
+
+  <joint name="Revolute_1" type="revolute">
+    <origin xyz="0.0125 -0.029 -0.019" rpy="-0 1.5707963 0"/>
+    <parent link="ankleL_1"/>
+    <child link="footL_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+
+  <joint name="Revolute_7" type="revolute">
+    <origin xyz="0.0125 -0.029 -0.019" rpy="3.1415927 1.5707963 0"/>
+    <parent link="ankleL_2"/>
+    <child link="footR_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+</robot>

@@ -1,0 +1,40 @@
+# This config file is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    right_leg_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    left_leg_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+right_leg_controller:
+  ros__parameters:
+    joints:
+      - Revolute_5_1
+      - Revolute_3_1
+      - Fastened_5_1
+      - Revolute_7
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    allow_nonzero_velocity_at_trajectory_end: true
+left_leg_controller:
+  ros__parameters:
+    joints:
+      - Revolute_5
+      - Revolute_3
+      - Revolute_2
+      - Revolute_1
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+    allow_nonzero_velocity_at_trajectory_end: true
