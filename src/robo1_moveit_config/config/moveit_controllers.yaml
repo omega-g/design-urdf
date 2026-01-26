@@ -9,13 +9,18 @@ moveit_simple_controller_manager:
 
   right_leg_controller:
     type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
     joints:
       - Revolute_5_1
       - Revolute_3_1
       - Fastened_5_1
       - Revolute_7
+
   left_leg_controller:
     type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
     joints:
       - Revolute_5
       - Revolute_3
